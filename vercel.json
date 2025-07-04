@@ -1,5 +1,16 @@
 {
   "buildCommand": null,
   "outputDirectory": ".",
-  "installCommand": null
+  "installCommand": null,
+  "headers": [
+    {
+      "source": "/public/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    }
+  ]
 }
